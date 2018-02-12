@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todo.Views.AskingContent">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            
+            <StackLayout Orientation="Vertical">
+                <Label Text="Enter the text"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="20"/>
+                <StackLayout Margin="10">
+                    <Entry x:Name="SendText" HorizontalOptions="FillAndExpand"
+                       FontSize="18" Placeholder="Enter your text here..."/>
+                </StackLayout>
+                <StackLayout Margin="10">
+                    <Button Text="Send" BackgroundColor="ForestGreen" TextColor="#fff" Clicked="Send_Button_Clicked"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

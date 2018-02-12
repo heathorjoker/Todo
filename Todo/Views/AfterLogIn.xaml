@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todo.Views.AfterLogIn">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" 
+                         VerticalOptions="Center"
+                         HorizontalOptions="Center">
+                <Button Text="Get Weather" 
+                        BackgroundColor="ForestGreen" 
+                        TextColor="#fff" 
+                        Margin="0,10,0,0"
+                        Clicked="Get_Weather">
+                </Button>
+                <Button Text="Calculate Area" 
+                        BackgroundColor="ForestGreen" 
+                        TextColor="#fff" 
+                        Margin="0,10,0,0"
+                        Clicked="Calculate_Area">
+                </Button>
+                <Button Text="Help" 
+                        BackgroundColor="ForestGreen" 
+                        TextColor="#fff" 
+                        Margin="0,10,0,0"
+                        Clicked="Get_Help"></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

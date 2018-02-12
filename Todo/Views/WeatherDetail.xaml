@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todo.Views.WeatherDetail">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Spacing="0">
+            <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="ForestGreen">
+                <Label x:Name="summaryView" TextColor="#fff" FontSize="25"></Label>
+            </StackLayout>
+            
+            
+            
+            <ListView x:Name="WeatherView" HasUnevenRows="true" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="120">
+                            
+                            <StackLayout Orientation="Horizontal" BackgroundColor="DarkOrange" Padding="0,20" >
+                                <Image Source="{Binding Icon}"/>
+                                <StackLayout Orientation="Vertical" WidthRequest="140" Margin="10,0,0,0">
+                                    <Label Text="{Binding dateToDisplay}" FontSize="20" TextColor="#fff"></Label>
+                                    <Label Text="{Binding Summary}" FontSize="16" TextColor="Azure"></Label> 
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Center">
+                                    <Label Text="Min:" TextColor="Azure"></Label>
+                                    <Label Text="{Binding TemperatureLow}" FontSize="20" TextColor="#fff"></Label>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Margin="10,0,0,0" VerticalOptions="Center">
+                                    <Label Text="Max:" TextColor="Azure"></Label>
+                                    <Label Text="{Binding TemperatureMax}" FontSize="20" TextColor="#fff"></Label>
+                                </StackLayout>
+                            </StackLayout>
+
+                            <!--
+                            <StackLayout Orientation="Horizontal">
+                                 
+                                <StackLayout Orientation="Vertical"  VerticalOptions="Center">
+                                    <Label Text="{Binding dateToDisplay}" FontSize="30"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical" VerticalOptions="Center">
+                                    <Label Text="{Binding TemperatureLow}" FontSize="30"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Vertical"  VerticalOptions="Center">
+                                    <Label Text="{Binding TemperatureMax}" FontSize="30"/>
+                                </StackLayout>
+                            </StackLayout>
+                             -->   
+                               
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

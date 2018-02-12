@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todo.Views.LogIn">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="ForestGreen">
+        <StackLayout Margin="40,20,40,40">
+                <Image x:Name="FarmyLogo"/>
+                <StackLayout Margin="0,20,0,20">
+                <Entry Placeholder="Email" TextColor="#fff" PlaceholderColor="#fff"
+                   x:Name="LogInEmail"
+                   />
+                <Entry Placeholder="Password" PlaceholderColor="#fff" TextColor="#fff"
+                   x:Name="LogInPassword"
+                   IsPassword="True"/>
+            </StackLayout>
+            <Button Text="Log In" 
+                BackgroundColor="#fff"
+                TextColor="ForestGreen"
+                Clicked="onLogInClicked"
+        />
+            <Button Text="Click here to Sign Up"
+                TextColor="#fff"
+                BackgroundColor="Green"
+                x:Name="SignUp"
+                Clicked="SignUp_Clicked"
+            />
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todo.Views.HelpPage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center" BackgroundColor="ForestGreen" Padding="20">
+
+            <StackLayout Orientation="Vertical" Padding="10" BackgroundColor="ForestGreen" x:Name="hole">
+                <Label x:Name="messages" TextColor="#fff" FontSize="25" HorizontalOptions="CenterAndExpand"></Label>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Margin="10">
+                <Label Text="Choose an option to send" TextColor="#fff" FontSize="20"  HorizontalOptions="CenterAndExpand"></Label>
+
+                <StackLayout Margin="10">
+                    <Button Text="Send SMS" BackgroundColor="#fff" TextColor="ForestGreen"
+             Clicked="SendSMS_OnClicked"/>
+                </StackLayout>
+
+                <!--
+            <StackLayout Margin="10">
+                <Button Text="phone call" BackgroundColor="#fff" TextColor="ForestGreen"
+             Clicked="PhoneCall_Clicked"/>
+            </StackLayout>
+            -->
+                <StackLayout Margin="10">
+                    <Button Text="send email" BackgroundColor="#fff" TextColor="ForestGreen"
+             Clicked="SendEmail_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

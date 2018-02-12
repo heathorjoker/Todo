@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Todo.Views.AreaCalculate">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <Button Text="Add Point" BackgroundColor="ForestGreen" TextColor="White" x:Name="Add" Clicked="Add_Point_Clicked"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="20">
+                <Button Text="Done! Show me Area" BackgroundColor="ForestGreen" TextColor="White" x:Name="Done" Clicked="Done_Clicked"></Button>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Margin="20">
+                <Label x:Name="Area_Display"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
