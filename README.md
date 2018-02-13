@@ -1,10 +1,10 @@
 Todo
 ====
 
-Contains following components 
-Login
-Area Component
-SMS and Mail Component
-Pdf Component
-Table component
-Weather component
+Contains following components</br> 
+Login</br>
+Area Component</br>
+SMS and Mail Component</br>
+Pdf Component</br>
+Table component</br>
+Weather component</br>
